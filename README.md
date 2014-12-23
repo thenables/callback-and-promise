@@ -23,7 +23,7 @@ callback-and-promise
 
 make generic async function return promise when callback not present.
 
-- Support both callback and promise 
+- Supports both callback and promise 
 - Preserves function names
 - Uses a native promise implementation if available and tries to fall back to `bluebird`
 - Converts multiple arguments from the callback into an `Array`
@@ -76,7 +76,7 @@ fs.readFile(__filename).then(function (buffer) {
 - `name` - custom function name
 - `fn` - the source function
 
-#### var obj = thenify(source, [obj], [methods])
+#### var obj = promisifyAll(source, [obj], [methods])
 
 - `source` - the source object for the async functions
 - `obj` - the destination to set all the promisified methods
