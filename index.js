@@ -12,6 +12,7 @@
 
 var Promise = require('native-or-bluebird')
 var multiline = require('multiline')
+var reserved = require('reserved')
 var fmt = require('util').format
 
 module.exports = function (name, $$__fn__$$) {
@@ -19,6 +20,7 @@ module.exports = function (name, $$__fn__$$) {
     $$__fn__$$ = name
     name = $$__fn__$$.name || 'anonymous'
   }
+  name = reserved.indexOf(name) !== -1 ? '_' + name : name;
 
   var fnstr = fmt(multiline.stripIndent(function () {;/*
       (function %s() {

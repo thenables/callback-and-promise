@@ -27,10 +27,10 @@
   "license": "MIT",
   "dependencies": {
     "multiline": "~1.0.1",
-    "native-or-bluebird": "~1.1.2"
+    "native-or-bluebird": "~1.1.2",
+    "reserved": "0.1.2"
   },
   "devDependencies": {
-    "autod": "1",
     "bluebird": "~2.4.2",
     "istanbul-harmony": "~0.3.1",
     "mocha": "~2.1.0",
