@@ -10,7 +10,7 @@
  * Module dependencies.
  */
 
-var promisify = require('./');
+var promisify = require('./')
 
 
 module.exports = function (source, destination, methods) {

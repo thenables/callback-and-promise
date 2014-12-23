@@ -10,20 +10,20 @@ callback-and-promise
 
 [npm-image]: https://img.shields.io/npm/v/callback-and-promise.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/callback-and-promise
-[travis-image]: https://img.shields.io/travis/thenable/callback-and-promise.svg?style=flat-square
-[travis-url]: https://travis-ci.org/thenable/callback-and-promise
-[coveralls-image]: https://img.shields.io/coveralls/thenable/callback-and-promise.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/thenable/callback-and-promise?branch=master
-[david-image]: https://img.shields.io/david/thenable/callback-and-promise.svg?style=flat-square
-[david-url]: https://david-dm.org/thenable/callback-and-promise
-[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/thenables/callback-and-promise.svg?style=flat-square
+[travis-url]: https://travis-ci.org/thenables/callback-and-promise
+[coveralls-image]: https://img.shields.io/coveralls/thenables/callback-and-promise.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/thenables/callback-and-promise?branch=master
+[david-image]: https://img.shields.io/david/thenables/callback-and-promise.svg?style=flat-square
+[david-url]: https://david-dm.org/thenables/callback-and-promise
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.8-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [gittip-image]: https://img.shields.io/gittip/dead-horse.svg?style=flat-square
 [gittip-url]: https://www.gittip.com/dead-horse/
 
-make generate async function return promise when callback not present
+make generic async function return promise when callback not present.
 
-- support both callback and promise 
+- Support both callback and promise 
 - Preserves function names
 - Uses a native promise implementation if available and tries to fall back to `bluebird`
 - Converts multiple arguments from the callback into an `Array`
