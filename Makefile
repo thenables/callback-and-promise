@@ -35,7 +35,7 @@ test-travis:
 
 autod: install
 	@node_modules/.bin/autod -w --prefix="~" \
-  -D mocha,istanbul-harmony,should
+  -D mocha,istanbul-harmony,should,bluebird
 	@$(MAKE) install
 
 .PHONY: test
