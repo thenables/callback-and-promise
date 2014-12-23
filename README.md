@@ -16,7 +16,7 @@ callback-and-promise
 [coveralls-url]: https://coveralls.io/r/thenables/callback-and-promise?branch=master
 [david-image]: https://img.shields.io/david/thenables/callback-and-promise.svg?style=flat-square
 [david-url]: https://david-dm.org/thenables/callback-and-promise
-[node-image]: https://img.shields.io/badge/node.js-%3E=_0.8-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
 [node-url]: http://nodejs.org/download/
 [gittip-image]: https://img.shields.io/gittip/dead-horse.svg?style=flat-square
 [gittip-url]: https://www.gittip.com/dead-horse/
