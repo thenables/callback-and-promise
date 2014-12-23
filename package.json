@@ -7,7 +7,13 @@
     "test": "make test"
   },
   "keywords": [
-
+    "promise",
+    "callback",
+    "promisify"
+  ],
+  "files": [
+    "index.js",
+    "all.js"
   ],
   "author": {
     "name": "dead-horse",
@@ -16,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:thenable/callback-and-promise"
+    "url": "git@github.com:thenables/callback-and-promise"
   },
   "license": "MIT",
   "dependencies": {
@@ -30,6 +36,6 @@
     "should": "~4.4.1"
   },
   "engine": {
-    "node": ">=0.10"
+    "node": ">=0.8"
   }
 }
