@@ -1,0 +1,35 @@
+{
+  "name": "callback-and-promise",
+  "version": "1.0.0",
+  "description": "make generate async function return promise when callback not present",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+
+  ],
+  "author": {
+    "name": "dead-horse",
+    "email": "dead_horse@qq.com",
+    "url": "http://deadhorse.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thenable/callback-and-promise"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "multiline": "~1.0.1",
+    "native-or-bluebird": "~1.1.2"
+  },
+  "devDependencies": {
+    "autod": "1",
+    "istanbul-harmony": "~0.3.1",
+    "mocha": "~2.0.1",
+    "should": "~4.4.1"
+  },
+  "engine": {
+    "node": ">=0.10"
+  }
+}
