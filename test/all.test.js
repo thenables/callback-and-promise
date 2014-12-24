@@ -52,7 +52,7 @@ describe('callback-and-promise/all', function () {
       delete: function () {}
     }
     module = thenify(module)
-    assert(typeof module.delete.name, 'function')
-    assert(module.delete.name, 'anonymous')
+    assert(typeof module.delete === 'function')
+    assert(module.delete.name === 'anonymous')
   })
 })
