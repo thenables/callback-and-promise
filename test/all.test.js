@@ -46,4 +46,13 @@ describe('callback-and-promise/all', function () {
       assert(stat.size, fs.statSync(__filename).size)
     })
   })
+
+  it('promisifyAll with reserved words', function () {
+    var module = {
+      delete: function () {}
+    }
+    module = thenify(module)
+    assert(typeof module.delete.name, 'function')
+    assert(module.delete.name, 'anonymous')
+  })
 })
