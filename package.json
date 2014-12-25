@@ -1,6 +1,6 @@
 {
   "name": "callback-and-promise",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "make generic async function return promise when callback not present",
   "main": "index.js",
   "scripts": {
