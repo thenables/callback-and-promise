@@ -7,16 +7,12 @@ describe('callback-and-promise', function () {
   describe('fn.name', function () {
     function someCrazyName() {}
 
-    it('should set name correct', function () {
-      assert.equal('someCrazyName', promisify('someCrazyName', someCrazyName).name)
-    })
-
     it('should set function name by default', function () {
       assert.equal('someCrazyName', promisify(someCrazyName).name)
     })
 
-    it('should set name to anonymous', function () {
-      assert.equal('anonymous', promisify(function() {}).name)
+    it('should set name to empty', function () {
+      assert.equal('', promisify(function() {}).name)
     })
   })
 
@@ -28,7 +24,7 @@ describe('callback-and-promise', function () {
     }
 
     it('promise', function () {
-      return promisify('blah', fn)().then(function () {
+      return promisify(fn)().then(function () {
         throw new Error('bang')
       }).catch(function (err) {
         assert.equal(err.message, 'boom')
@@ -36,7 +32,7 @@ describe('callback-and-promise', function () {
     })
 
     it('callback', function (done) {
-      promisify('blah', fn)(function (err) {
+      promisify(fn)(function (err) {
         assert.equal(err.message, 'boom')
         done()
       })

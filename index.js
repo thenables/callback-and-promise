@@ -14,12 +14,7 @@ var Promise = require('native-or-bluebird')
 var multiline = require('multiline')
 var fmt = require('util').format
 
-module.exports = function (name, $$__fn__$$) {
-  if (typeof name === 'function') {
-    $$__fn__$$ = name
-    name = $$__fn__$$.name || 'anonymous'
-  }
-
+module.exports = function ($$__fn__$$) {
   var fnstr = fmt(multiline.stripIndent(function () {;/*
       (function %s() {
         var self = this
@@ -38,7 +33,7 @@ module.exports = function (name, $$__fn__$$) {
           $$__fn__$$.apply(self, args)
         })
       })
-  */}), name)
+  */}), $$__fn__$$.name)
 
   return eval(fnstr)
 }
