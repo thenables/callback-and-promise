@@ -23,6 +23,8 @@ callback-and-promise
 
 make generic async function return promise when callback not present.
 
+___Please use [thenify](https://github.com/thenables/thenify) and [thenify-all](https://github.com/thenables/thenify-all) instead!___
+
 - Supports both callback and promise 
 - Preserves function names
 - Uses a native promise implementation if available and tries to fall back to `bluebird`
